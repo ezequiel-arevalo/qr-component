@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Outfit', sans-serif;
+    src: url('../fonts/Outfit/Outfit-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Outfit', sans-serif;
+    src: url('../fonts/Outfit/Outfit-Bold.ttf');
+    font-weight: 700;
+}
+
+:root
+{
+    --white: hsl(0, 0%, 100%);
+
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+}
+
+body
+{
+    background-color: var(--slate-300);
+    font-size: 15px;
+}
+
+main
+{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.card
+{
+    max-width: 320px;
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.card-image
+{
+    text-align: center;
+} 
+
+.card-image > img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.card-texts
+{
+    text-align: center;
+}
+
+.card-texts > h1
+{
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    color: var(--slate-900);
+    font-size: 1.5rem;
+}
+
+.card-texts > p
+{  
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: var(--slate-500);
+}
+
+/* Attribution */
+.attribution
+{ 
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution > a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (width: 375px) {
+    .card-texts > h1
+    {
+        font-size: 1.4rem;
+    }
+}
